@@ -46,14 +46,16 @@ console.log(booking);
                                 key={bookings?._id}
                                 md={6}
                             >
-                                <Card style={{  }}>
-                                <Card.Header>{bookings?.location}</Card.Header>
-                                <ListGroup variant="flush">
-                                    <ListGroup.Item>{bookings?.user_name}</ListGroup.Item>
-                                    <ListGroup.Item>{bookings?.email}</ListGroup.Item>
-                                    <ListGroup.Item>{bookings?.date}</ListGroup.Item>
-                                </ListGroup>
-                                </Card>
+                                <div className="mb-4">
+                                    <Card>
+                                    <Card.Header>{bookings?.location}</Card.Header>
+                                    <ListGroup variant="flush">
+                                        <ListGroup.Item>{bookings?.user_name}</ListGroup.Item>
+                                        <ListGroup.Item>{bookings?.email}</ListGroup.Item>
+                                        <ListGroup.Item>{bookings?.date}</ListGroup.Item>
+                                    </ListGroup>
+                                    </Card>
+                                </div>
                             </Col>
                         ) )
                     }

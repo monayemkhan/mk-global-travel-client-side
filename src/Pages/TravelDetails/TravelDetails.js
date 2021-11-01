@@ -6,12 +6,13 @@ import { Link } from 'react-router-dom';
 const TravelDetails = () => {
     const { travelId } = useParams();
     const [travels, setTravel] = useState([]);
-    console.log(travelId)
+
     useEffect(() => {
         fetch(`https://pure-wave-13733.herokuapp.com/travels/${travelId}`)
         .then(res => res.json())
         .then(data => setTravel(data))
     }, [travelId]);
+
     return (
         <div>
             <Container className="my-5">
@@ -28,9 +29,6 @@ const TravelDetails = () => {
                             <Button variant="outline-primary fw-bold w-100 p-2">Booking</Button>
                         </Link>
                     </Col>
-                </Row>
-                <Row>
-                    
                 </Row>
             </Container>
         </div>

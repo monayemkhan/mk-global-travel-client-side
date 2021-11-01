@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Travel = ({ travel }) => {
     const { _id, name, period, short_des, location, Price} = travel;
+    
     return (
         <div className="col-md-4 mt-4">
             <Card className="shadow">

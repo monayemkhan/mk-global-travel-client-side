@@ -1,12 +1,11 @@
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useState } from 'react';
 import { useHistory, useLocation } from 'react-router';
 import { Col, Container, Row } from 'react-bootstrap';
 import useAuth from '../../../../hooks/useAuth';
 
 const Login = () => {
-    const { signInUsingGoogle, setUser, error, setError } = useAuth();
+    const { signInUsingGoogle, setUser, setError } = useAuth();
     const location = useLocation();
     const history = useHistory();
     const redirect_url = location.state?.from || '/home';
