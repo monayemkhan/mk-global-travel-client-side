@@ -4,9 +4,10 @@ import { useForm } from "react-hook-form";
 
 const AddTravels = () => {
     const { register, handleSubmit, reset } = useForm();
+
     const onSubmit = data => {
         console.log(data)
-        axios.post('http://localhost:5000/travels',data)
+        axios.post('https://pure-wave-13733.herokuapp.com/travels', data)
         .then(res => {
             if(res.data.insertedId){
                 alert('Travels Added Successfully');
@@ -15,12 +16,13 @@ const AddTravels = () => {
             
         })
     };
+
     return (
         <>
             <div className="container my-5">
-              <div className="row mx-auto align-items-center">
-                <div className="w-75 mx-auto border rounded shadow ">
-                    <div className="text-wrap p-2 p-lg-3 text-center">
+                <div className="row mx-auto align-items-center">
+                    <div className="w-75 mx-auto border rounded shadow ">
+                        <div className="text-wrap p-2 p-lg-3 text-center">
                             <div>
                                 <h2 className="fs-2 ">Welcome to Add Travel</h2>
                                 <p>Please fill the from with all info</p>

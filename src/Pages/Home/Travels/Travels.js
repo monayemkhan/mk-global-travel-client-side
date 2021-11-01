@@ -4,9 +4,10 @@ import Travel from '../Travel/Travel';
 
 const Travels = () => {
     const [travels, setTravel] = useState([]);
+    
     // using useEffect for data load
     useEffect(() => {
-        fetch('http://localhost:5000/travels')
+        fetch('https://pure-wave-13733.herokuapp.com/travels')
         .then(res => res.json())
         .then(data => setTravel(data))
     }, []);

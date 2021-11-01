@@ -31,7 +31,7 @@ const Footer = () => {
                     <Col className="mt-5">
                         <div className="text-secondary">
                             <div>
-                                <h4>Navigations</h4>
+                                <h4 className="text-light fs-4">Navigations</h4>
                             </div>
                             <div>
                                 <NavLink className="text-secondary d-block" to="/home">Video Home Page</NavLink>
@@ -44,16 +44,16 @@ const Footer = () => {
                     <Col className="mt-5">
                         <div className="text-secondary">
                             <div>
-                               <h4>Download Apps</h4>
+                               <h4 className="text-light fs-4">Download Apps</h4>
                             </div>
                             <div>
                                 <div className="d-flex border border-1 border-secondary my-2">
-                                    <NavLink className=" mx-3 text-secondary fs-2" to="/home"><FontAwesomeIcon icon={faGooglePlay} /></NavLink>
+                                    <NavLink className=" mx-3 text-secondary fs-2" to="/home"><FontAwesomeIcon className="text-primary" icon={faGooglePlay} /></NavLink>
                                     <h5>Google Play <br /> <small>Get It Now</small></h5>
                                 </div>
                                 <div className="d-flex border border-1 border-secondary my-2">
-                                    <NavLink className=" mx-3 text-secondary fs-1" to="/home"><FontAwesomeIcon icon={faApple} /></NavLink>
-                                    <h5>Google Play <br /> <small>Get It Now</small></h5>
+                                    <NavLink className=" mx-3 text-secondary fs-1" to="/home"><FontAwesomeIcon className="text-primary" icon={faApple} /></NavLink>
+                                    <h5>App Store <br /> <small>Get It Now</small></h5>
                                 </div>
                             </div>
                         </div>
