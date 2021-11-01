@@ -20,11 +20,12 @@ const TravelDetails = () => {
                         <img className="w-75 mx-auto" src={travels.img} alt="" />
                     </Col>
                     <Col md={12} className="w-75 mx-auto mt-5">
-                        <h2>Tarvel Name {travels.name}</h2>
-                        <p>Location {travels.location}</p>
-                        <p>Description {travels.full_des}</p>
+                        <h2>{travels.name}</h2>
+                        <p>Location: {travels.location}</p>
+                        <p>Description: {travels.full_des}</p>
+                        <h3 className="mb-3 text-danger">Price: $ {travels.Price}</h3>
                         <Link to={`/booking/${travels._id}`}>
-                            <Button variant="outline-primary">Confirm Now</Button>
+                            <Button variant="outline-primary fw-bold w-100 p-2">Booking</Button>
                         </Link>
                     </Col>
                 </Row>

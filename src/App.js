@@ -39,9 +39,6 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
-            <Route path="/ar">
-              <TravelDetails></TravelDetails>
-            </Route>
             <PrivateRoute path="/travels/:travelId">
               <TravelDetails></TravelDetails>
             </PrivateRoute>

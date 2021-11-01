@@ -32,20 +32,21 @@ const AddBooking = () => {
     return (
         <div className="container">
             <div className="text-wrap p-2 p-lg-3 text-center">
-                <div>
-                    <h2 className="fs-2 ">Welcome to Add Travel</h2>
-                    <p>Please fill the from with all info</p>
-                    
-                    <div>
-                        <h2>{bookings.name}</h2>
+                <div className="border rounded-3">
+                    <div className="border-bottom border-secondary border-2 my-5">
+                        <h2 className="fs-2 ">Add Your Booking Information</h2>
+                        <p>Please fill the from with all info</p>
+                    </div>
+                    <div className="w-75 mx-auto mb-5">
+                        <h2>{bookings.location}</h2>
                         <form className="p-2" onSubmit={handleSubmit(onSubmit)}>
                             <input className="form-control m-3" placeholder="Enter travel name" type="text"  {...register("user_name")} defaultValue={user?.displayName }/>
                             <input className="form-control m-3" placeholder="Enter the location" type="text"  {...register("location")} defaultValue={bookings.location}/>
                             <textarea className="form-control m-3" placeholder="Enter the Address" type="text"  {...register("address", { required: true})} />
                             <input className="form-control m-3" placeholder="Enter the Phone number" type="datetime-local"  {...register("date")} />
                             <input className="form-control m-3" placeholder="Enter the Phone number" type="text"  {...register("email")} defaultValue={user?.email }/>
-                            
-                            <input className="btn btn-outline-primary fw-bold" type="Submit" />
+                            <input className="form-control m-3" placeholder="Status" type="text"  {...register("status")} defaultValue={ 'Pending' }/>
+                            <input className="btn btn-outline-primary fw-bold p-2" type="Submit" />
                         </form>
                     </div>
                 </div>

@@ -9,15 +9,33 @@ const Testimonial = () => {
             <Container className="text-center my-5">
                 <div>
                     <p className="text-secondary">What Our Clients Saying</p>
-                    <h2>Our Traveler Syas</h2>
+                    <h2>Our Traveler Says</h2>
                 </div>
                 <Row className="mt-4">
-                    <Col>
-                        <div className="text-center">
-                            <Card>
-                                <Card.Img className="w-50 mx-auto rounded-circle mt-2" variant="top" src={`https://i.ibb.co/TYx5DMY/user-1.jpg`} />
-                                <Card.Body>
-                                <Card.Title>Adam Wardilia</Card.Title>
+                    <Col md={4} xs={12} className="my-sm-3 my-md-0">
+                        <Card>
+                            <Card.Img className="w-50 mx-auto rounded-circle mt-2" variant="top" src={`https://i.ibb.co/TYx5DMY/user-1.jpg`} />
+                            <Card.Body>
+                            <Card.Title>Adam Wardilia</Card.Title>
+                            <Card.Title>
+                                <FontAwesomeIcon icon={faStar} />
+                                <FontAwesomeIcon icon={faStar} />
+                                <FontAwesomeIcon icon={faStar} />
+                                <FontAwesomeIcon icon={faStar} />
+                                <FontAwesomeIcon icon={faStarHalfAlt} />
+                            </Card.Title>
+                            <Card.Text>
+                            <span>Annie,</span> is always a pleasure to work with. She is friendly, professional and well informed. Annie always efficiently deals with any travel. Every trip we have planned with her has been excellent.
+                            </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+
+                    <Col md={4} xs={12}>
+                        <Card>
+                            <Card.Img className="w-50 mx-auto rounded-circle mt-2" variant="top" src={`https://i.ibb.co/mvXkZLZ/user-2.jpg`} />
+                            <Card.Body>
+                            <Card.Title>Lily Warliags</Card.Title>
                                 <Card.Title>
                                     <FontAwesomeIcon icon={faStar} />
                                     <FontAwesomeIcon icon={faStar} />
@@ -26,33 +44,13 @@ const Testimonial = () => {
                                     <FontAwesomeIcon icon={faStarHalfAlt} />
                                 </Card.Title>
                                 <Card.Text>
-                                <span>Annie,</span> is always a pleasure to work with. She is friendly, professional and well informed. Annie always efficiently deals with any travel. Every trip we have planned with her has been excellent.
+                                Wow <span>Vali.</span> I thank you for all your effort and travel information. I really wasn’t expecting that you do this. Every trip we have planned with her has been excellent. So thank you very much.
                                 </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </div>
+                            </Card.Body>
+                        </Card>
                     </Col>
-                    <Col>
-                        <div>
-                            <Card>
-                                <Card.Img className="w-50 mx-auto rounded-circle mt-2" variant="top" src={`https://i.ibb.co/mvXkZLZ/user-2.jpg`} />
-                                <Card.Body>
-                                <Card.Title>Lily Warliags</Card.Title>
-                                    <Card.Title>
-                                        <FontAwesomeIcon icon={faStar} />
-                                        <FontAwesomeIcon icon={faStar} />
-                                        <FontAwesomeIcon icon={faStar} />
-                                        <FontAwesomeIcon icon={faStar} />
-                                        <FontAwesomeIcon icon={faStarHalfAlt} />
-                                    </Card.Title>
-                                    <Card.Text>
-                                    Wow <span>Vali.</span> I thank you for all your effort and travel information. I really wasn’t expecting that you do this. Every trip we have planned with her has been excellent. So thank you very much.
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </div>
-                    </Col>
-                    <Col>
+
+                    <Col md={4} xs={12}>
                         <Card>
                             <Card.Img className="w-50 mx-auto rounded-circle mt-2" variant="top" src={`https://i.ibb.co/s2qK2PR/user-3.jpg`} />
                             <Card.Body>

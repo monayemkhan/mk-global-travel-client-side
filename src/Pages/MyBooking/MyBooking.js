@@ -34,7 +34,10 @@ console.log(booking);
     };
     return (
         <div>
-            <h2>{booking?.length}</h2>
+            <div className="border-bottom border-primary border-1 my-5 text-center">
+                <h2 className="fs-2 fw-bold mb-5">My Booking</h2>
+            </div>
+            
             <Container className="my-5">
                 <Row>
                     {
